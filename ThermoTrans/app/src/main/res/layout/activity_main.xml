@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtCent"
+        android:layout_width="224dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="1dp"
+        android:text="摂氏(oC)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFha"
+        android:layout_width="224dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:text="華氏(oF)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCent" />
+
+    <EditText
+        android:id="@+id/editCent"
+        android:layout_width="214dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCent" />
+
+    <EditText
+        android:id="@+id/editFha"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFha" />
+
+    <RadioGroup
+        android:id="@+id/rtoGr"
+        android:layout_width="218dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFha">
+
+        <RadioButton
+            android:id="@+id/rtoFha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="摂氏(oC) to 華氏(oF)" />
+
+        <RadioButton
+            android:id="@+id/rtoCent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="華氏(oF) to 摂氏(oC)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="410dp"
+        android:layout_height="49dp"
+        android:text="CONVERT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rtoGr" />
+
+    <Button
+        android:id="@+id/cancell"
+        android:layout_width="410dp"
+        android:layout_height="49dp"
+        android:text="CANCELL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convert" />
+
+</android.support.constraint.ConstraintLayout>

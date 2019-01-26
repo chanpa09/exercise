@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -17,12 +19,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     RadioButton rtoCent;
     Button convert;
     Button cancell;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
+        AdView mAdView = (AdView) findViewById(R.id.adView);AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         MobileAds.initialize(this, "ca-app-pub-4830018604875325~1132772017");
 
         editCent = (EditText) this.findViewById(R.id.editCent);

@@ -91,4 +91,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/convert" />
 
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="104dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4830018604875325~1132772017"
+        ads:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

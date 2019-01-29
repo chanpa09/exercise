@@ -1,4 +1,4 @@
-package park.test.financerequest;
+package park.test.wikisovereignflags;
 
 import org.junit.Test;
 

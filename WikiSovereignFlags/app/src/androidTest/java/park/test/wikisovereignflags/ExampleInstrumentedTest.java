@@ -1,4 +1,4 @@
-package park.test.financerequest;
+package park.test.wikisovereignflags;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("park.test.financerequest", appContext.getPackageName());
+        assertEquals("park.test.wikisovereignflags", appContext.getPackageName());
     }
 }

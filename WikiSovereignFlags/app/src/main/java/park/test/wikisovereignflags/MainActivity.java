@@ -1,4 +1,4 @@
-package park.test.financerequest;
+package park.test.wikisovereignflags;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

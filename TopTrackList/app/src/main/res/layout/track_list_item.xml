@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/billImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/trackurl"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/empty" />
+
+        <TextView
+            android:id="@+id/songname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dip"
+            android:layout_toEndOf="@+id/billImageView"
+            android:paddingTop="5dip"
+            android:paddingBottom="0dip"
+            android:text="TrackName"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/artistname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/songname"
+            android:layout_marginLeft="4dip"
+            android:layout_toEndOf="@+id/billImageView"
+            android:paddingTop="0dip"
+            android:paddingBottom="0dip"
+            android:text="ArtistName" />
+
+        <TextView
+            android:id="@+id/trackurl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/artistname"
+            android:layout_marginStart="4dip"
+            android:layout_toEndOf="@+id/billImageView"
+            android:gravity="start"
+            android:paddingTop="0dip"
+            android:paddingBottom="5dip"
+            android:text="Track URL : "
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/billtxtRank"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/songname"
+            android:layout_alignEnd="@+id/songname"
+            android:text="rank"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+</LinearLayout>

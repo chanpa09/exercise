@@ -5,7 +5,6 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

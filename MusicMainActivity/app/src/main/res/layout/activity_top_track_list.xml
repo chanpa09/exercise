@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToptrackListActivity"
+    android:orientation="vertical"
+    android:background="#baebf9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:id="@+id/relativeLayout">
+
+        <Spinner
+            android:id="@+id/musickinds"
+            android:background="@drawable/track_search_bar"
+            android:layout_width="match_parent"
+            android:paddingLeft="55dp"
+            android:paddingRight="55dp"
+            android:gravity="center_vertical"
+            android:layout_height="33dp"
+            android:spinnerMode="dropdown"
+            android:layoutMode="clipBounds"
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:id="@+id/track_button"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_gravity="right"
+            android:background="@drawable/artist_search_onoff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/musickinds" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listView"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="10dp">
+
+    </ListView>
+</LinearLayout>

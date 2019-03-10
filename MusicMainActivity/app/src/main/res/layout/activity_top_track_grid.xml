@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#baebf9"
+        android:orientation="vertical"
+        tools:context=".TopTrackGridActivity">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="33dp">
+
+            <Spinner
+                android:id="@+id/musickinds"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/track_search_bar"
+                android:gravity="center_vertical"
+                android:layoutMode="clipBounds"
+                android:paddingLeft="55dp"
+                android:paddingRight="55dp"
+                android:spinnerMode="dropdown" />
+
+            <ImageButton
+                android:id="@+id/track_button"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_alignBottom="@+id/musickinds"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="-40dp"
+                android:background="@drawable/artist_search_onoff" />
+
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/track_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:numColumns="5"></GridView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+</FrameLayout>
